@@ -382,7 +382,7 @@ export default App;
 
 ![Output For imageStyle](https://github.com/DipeshMajithia/react-native-array-dropdown/blob/main/screenshot/imageStyle.png)
 
-13) imageStyle (Optional)
+13) touchOpacity (Optional)
 
 code: 
 
