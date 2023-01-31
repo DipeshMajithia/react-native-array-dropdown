@@ -12,6 +12,7 @@ function App() {
   const [selectedValue, setSelectedValue] = useState('');
   return (
       <Dropdown
+        // Property Code //
         setSelectedValue={setSelectedValue} />
         );
         
@@ -28,8 +29,8 @@ function App() {
       <Dropdown
         setSelectedValue={setSelectedValue} 
        
-       
-       data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}/>
+        // Property Code //
+        data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}/>
         );
         
 }
@@ -46,9 +47,9 @@ function App() {
       <Dropdown
         setSelectedValue={setSelectedValue} 
         data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}
-      
-      
-      initialTitle="Select Option"
+        
+        // Property Code //
+        initialTitle="Select Option"
       />
         );
         
@@ -72,8 +73,8 @@ function App() {
         data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}
         initialTitle="Select Option"
        
-       
-       mainView={{backgroundColor: 'skyblue', width: 300}}
+        // Property Code //
+        mainView={{backgroundColor: 'skyblue', width: 300}}
 
       />
         );
@@ -98,8 +99,8 @@ function App() {
         initialTitle="Select Option"
         mainView={{backgroundColor: 'skyblue', width: 300}}
        
-       
-       titleStyle={{fontSize: 20, color: 'yellow'}}
+        // Property Code //
+        titleStyle={{fontSize: 20, color: 'yellow'}}
 
 
       />
@@ -126,7 +127,7 @@ function App() {
         mainView={{backgroundColor: 'skyblue', width: 300}}
         titleStyle={{fontSize: 20, color: 'yellow'}}
         
-        
+        // Property Code //
         dropdownContainer={{
           backgroundColor: 'orange',
           alignSelf: 'center',
@@ -162,7 +163,7 @@ function App() {
           width: 200,
         }}
         
-        
+        // Property Code //
         dropdownItemContainer={{
           backgroundColor: 'magenta',
           borderRadius: 30,
@@ -200,7 +201,7 @@ function App() {
           borderRadius: 30,
         }}
         
-        
+        // Property Code //
         dropdownItemText={{color: 'white', fontSize: 20}}
 
       />
@@ -237,7 +238,7 @@ function App() {
         }}
         dropdownItemText={{color: 'white', fontSize: 20}}
         
-        
+        // Property Code //
         dropdownSelectedItemContainer={styles.fromStylesheet}
 
       />
@@ -277,7 +278,10 @@ function App() {
           backgroundColor: 'magenta',
           borderRadius: 30,
         }}
+        dropdownItemText={{color: 'white', fontSize: 20}}
+        dropdownSelectedItemContainer={styles.fromStylesheet}
         
+        // Property Code //
         dropdownSelectedItemText={{color: 'white', fontSize: 20}}
 
       />
@@ -289,3 +293,93 @@ export default App;
 
 
 ![Output For dropdownSelectedItemText](https://github.com/DipeshMajithia/react-native-array-dropdown/blob/main/screenshot/dropdownSelectedItemText.png)
+
+11) imagePath (Optional)
+
+code: 
+
+```
+
+import Icon from './caret-down.png';
+
+function App() {
+  const [selectedValue, setSelectedValue] = useState('');
+  return (
+      <Dropdown
+        setSelectedValue={setSelectedValue} 
+        data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}
+        initialTitle="Select Option"
+        mainView={{backgroundColor: 'skyblue', width: 300}}
+        titleStyle={{fontSize: 20, color: 'yellow'}}
+        dropdownContainer={{
+          backgroundColor: 'orange',
+          alignSelf: 'center',
+          width: 200,
+        }}
+        dropdownItemContainer={{
+          backgroundColor: 'magenta',
+          borderRadius: 30,
+        }}
+        dropdownItemText={{color: 'white', fontSize: 20}}
+        dropdownSelectedItemContainer={styles.fromStylesheet}
+        dropdownSelectedItemText={{color: 'white', fontSize: 20}}
+        
+        // Property Code //
+        imagePath={Icon}
+
+      />
+        );
+        
+}
+export default App;
+```
+
+
+![Output For imagePath](https://github.com/DipeshMajithia/react-native-array-dropdown/blob/main/screenshot/ImagePath.png)
+
+12) imageStyle (Optional)
+
+code: 
+
+```
+
+import Icon from './caret-down.png';
+
+function App() {
+  const [selectedValue, setSelectedValue] = useState('');
+  return (
+      <Dropdown
+        setSelectedValue={setSelectedValue} 
+        data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}
+        initialTitle="Select Option"
+        mainView={{backgroundColor: 'skyblue', width: 300}}
+        titleStyle={{fontSize: 20, color: 'yellow'}}
+        dropdownContainer={{
+          backgroundColor: 'orange',
+          alignSelf: 'center',
+          width: 200,
+        }}
+        dropdownItemContainer={{
+          backgroundColor: 'magenta',
+          borderRadius: 30,
+        }}
+        dropdownItemText={{color: 'white', fontSize: 20}}
+        dropdownSelectedItemContainer={styles.fromStylesheet}
+        dropdownSelectedItemText={{color: 'white', fontSize: 20}}
+        imagePath={Icon}
+        
+        // Property Code //
+        imageStyle={{backgroundColor: 'pink', borderRadius: 20}}
+        
+
+      />
+        );
+        
+}
+export default App;
+```
+
+
+![Output For imageStyle](https://github.com/DipeshMajithia/react-native-array-dropdown/blob/main/screenshot/imageStyle.png)
+
+
