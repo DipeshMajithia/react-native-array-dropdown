@@ -426,6 +426,10 @@ export default App;
 ```
 
 
-
-
+|Property|Type|Default|Description|
+|-------|-------|-------|-------|
+|setSelectedValue  | Function | null  | Returns the selected value  |
+|initialTitle  | String | --Select--  | Placeholder  |
+|mainView  | ViewStyle | --Select--  | Placeholder  |
+ 
 
