@@ -382,4 +382,50 @@ export default App;
 
 ![Output For imageStyle](https://github.com/DipeshMajithia/react-native-array-dropdown/blob/main/screenshot/imageStyle.png)
 
+13) imageStyle (Optional)
+
+code: 
+
+```
+
+import Icon from './caret-down.png';
+
+function App() {
+  const [selectedValue, setSelectedValue] = useState('');
+  return (
+      <Dropdown
+        setSelectedValue={setSelectedValue} 
+        data={['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']}
+        initialTitle="Select Option"
+        mainView={{backgroundColor: 'skyblue', width: 300}}
+        titleStyle={{fontSize: 20, color: 'yellow'}}
+        dropdownContainer={{
+          backgroundColor: 'orange',
+          alignSelf: 'center',
+          width: 200,
+        }}
+        dropdownItemContainer={{
+          backgroundColor: 'magenta',
+          borderRadius: 30,
+        }}
+        dropdownItemText={{color: 'white', fontSize: 20}}
+        dropdownSelectedItemContainer={styles.fromStylesheet}
+        dropdownSelectedItemText={{color: 'white', fontSize: 20}}
+        imagePath={Icon}
+        imageStyle={{backgroundColor: 'pink', borderRadius: 20}}
+        
+        // Property code //
+        touchOpacity={0.8}
+        
+
+      />
+        );
+        
+}
+export default App;
+```
+
+
+
+
 
