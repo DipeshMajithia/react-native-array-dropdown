@@ -1,6 +1,27 @@
 # react-native-customizable-array-dropdown
 
 This library will take array as input and create a dropdown based on it.
+
+
+
+|Property|Type|Default|Description|
+|-------|-------|-------|-------|
+|setSelectedValue*  | Function | null  | Returns the selected value  |
+|data*  | array | ["Demo1", "Demo2", "Demo3"]  | Array of values you want in your dropdown.  |
+|initialTitle  | String | --Select--  | Placeholder  |
+|mainView  | ViewStyle | defaultStyle  | To change the view of main container  |
+|titleStyle   | ViewStyle | defaultStyle  | To change the style of title(Option Selected)   |
+|dropdownContainer    | ViewStyle | defaultStyle  | To change the style of dropdown container   |
+|dropdownItemContainer     | ViewStyle | defaultStyle  | To change the style of individual dropdown item container   |
+|dropdownItemText     | ViewStyle | defaultStyle  | To change the style of dropdown text (i.e. Options)   |
+|dropdownSelectedItemContainer     | ViewStyle | defaultStyle  | To change the style of option container which is selected.  |
+|dropdownSelectedItemText     | ViewStyle | defaultStyle  | To change the style of text which is currently selected   |
+|imagePath     | imported image | 'down-arrow.png'  | To change the icon of the dropdown  |
+|imageStyle     | ViewStyle | defaultStyle  | To change the style of image   |
+|touchOpacity     | integer | 0.7  | To change touch opacity of component   |
+
+
+
 More details and properties below: 
 
 Properties: 
@@ -426,21 +447,6 @@ export default App;
 ```
 
 
-|Property|Type|Default|Description|
-|-------|-------|-------|-------|
-|setSelectedValue*  | Function | null  | Returns the selected value  |
-|data*  | array | ["Demo1", "Demo2", "Demo3"]  | Array of values you want in your dropdown.  |
-|initialTitle  | String | --Select--  | Placeholder  |
-|mainView  | ViewStyle | defaultStyle  | To change the view of main container  |
-|titleStyle   | ViewStyle | defaultStyle  | To change the style of title(Option Selected)   |
-|dropdownContainer    | ViewStyle | defaultStyle  | To change the style of dropdown container   |
-|dropdownItemContainer     | ViewStyle | defaultStyle  | To change the style of individual dropdown item container   |
-|dropdownItemText     | ViewStyle | defaultStyle  | To change the style of dropdown text (i.e. Options)   |
-|dropdownSelectedItemContainer     | ViewStyle | defaultStyle  | To change the style of option container which is selected.  |
-|dropdownSelectedItemText     | ViewStyle | defaultStyle  | To change the style of text which is currently selected   |
-|imagePath     | imported image | 'down-arrow.png'  | To change the icon of the dropdown  |
-|imageStyle     | ViewStyle | defaultStyle  | To change the style of image   |
-|touchOpacity     | integer | 0.7  | To change touch opacity of component   |
 
 
 
