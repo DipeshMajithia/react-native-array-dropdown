@@ -6,8 +6,8 @@ This library will take array as input and create a dropdown based on it.
 
 |Property|Type|Default|Description|
 |-------|-------|-------|-------|
-|setSelectedValue*  | Function | null  | Returns the selected value  |
-|data*  | array | ["Demo1", "Demo2", "Demo3"]  | Array of values you want in your dropdown.  |
+|setSelectedValue (Required)  | Function | null  | Returns the selected value  |
+|data (Required)  | array | ["Demo1", "Demo2", "Demo3"]  | Array of values you want in your dropdown.  |
 |initialTitle  | String | --Select--  | Placeholder  |
 |mainView  | ViewStyle | defaultStyle  | To change the view of main container  |
 |titleStyle   | ViewStyle | defaultStyle  | To change the style of title(Option Selected)   |
