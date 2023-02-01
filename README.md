@@ -429,7 +429,7 @@ export default App;
 |Property|Type|Default|Description|
 |-------|-------|-------|-------|
 |setSelectedValue*  | Function | null  | Returns the selected value  |
-|data*  | array | ['Item1', 'Item2', 'Item3', 'Item4', 'Item5', 'Item6', 'Item7']  | Array of values you want in your dropdown.  |
+|data*  | array | ["Demo1", "Demo2", "Demo3"]  | Array of values you want in your dropdown.  |
 |initialTitle  | String | --Select--  | Placeholder  |
 |mainView  | ViewStyle | defaultStyle  | To change the view of main container  |
 |titleStyle   | ViewStyle | defaultStyle  | To change the style of title(Option Selected)   |
